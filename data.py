@@ -52,10 +52,10 @@ country_revenue_over_50 = (
     .sum()
 )
 
-print("Total order value for John Doe (orders > $100):", john_doe_total)
+print("Total order value for John Doe (orders > $100):", round(john_doe_total))
 print("Country with highest total revenue (orders > $100):", top_country)
-print("Total revenue for the top country (orders > $100):", top_country_revenue)
-print("Average order amount (orders > $100):", average_order_over_100)
+print("Total revenue for the top country (orders > $100):", round(top_country_revenue))
+print("Average order amount (orders > $100):", round(average_order_over_100))
 
 plt.figure()
 country_revenue_over_50.plot(kind="bar")
